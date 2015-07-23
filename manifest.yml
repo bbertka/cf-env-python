@@ -1,6 +1,6 @@
 applications:
 - name: cf-env-python
   buildpack: https://github.com/cloudfoundry/python-buildpack
-  memory: 256M
+  memory: 128M
   stack: cflinuxfs2
   instances: 1
