@@ -3,10 +3,12 @@
 from flask import Flask, request, redirect, url_for, send_from_directory
 import os
 
-app = Flask(__name__,static_url_path='')
+app = Flask(__name__)
+
 port = int(os.getenv("VCAP_APP_PORT"))
 
 @app.route('/')
+def home():
 	return port
 
 if __name__ == '__main__':
